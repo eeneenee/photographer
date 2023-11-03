@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'The Youngest Script';
+    src: 
+        url('./Fonts/The\ Yongest\ Script/TYScript-Rg.eot') format('embedded-opentype'),
+        url('./Fonts/The\ Yongest\ Script/TYScript-Rg.woff2') format('woff2'),
+        url('./Fonts/The\ Yongest\ Script/TYScript-Rg.woff') format('woff'),
+        url('./Fonts/The\ Yongest\ Script/TYScript-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'The Youngest Serif';
+    src: 
+        url('./Fonts/The\ Yongest\ Serif-Book/TYSerif-Book.eot') format('embedded-opentype'),
+        url('./Fonts/The\ Yongest\ Serif-Book/TYSerif-Book.woff2') format('woff2'),
+        url('./Fonts/The\ Yongest\ Serif-Book/TYSerif-Book.woff') format('woff'),
+        url('./Fonts/The\ Yongest\ Serif-Book/TYSerif-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 100;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--color-white);
+
+}
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+button{
+    border: var(--color-black) 1px solid;
+    padding: calc(var(--index)*.5) calc(var(--index)*3);
+    width: fit-content;
+    color: var(--color-black);
+    background: var(--color-white);
+    font-size: calc(var(--index)*.9);
+}
+:root{
+    --index: calc(1vh + 1vw);
+    --color-white: #fefefe;
+    --color-black: #241d1d;
+    --font: The Youngest Script;
+    --fontSerif: The Youngest Serif;
+}
+
+
+    /* Logo */
+.logo{
+        font-size: calc(var(--index)*1.5);
+        width: max-content;
+        margin: 0 auto;
+        padding: calc(var(--index)*2) calc(var(--index)*2) 0;
+        color: var(--color-black);
+}
+.logo.active{
+    color: var(--color-white);
+}
+    /*// Logo */

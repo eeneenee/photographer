@@ -1,0 +1,83 @@
+.contact{
+    padding: calc(var(--index)*1.5) calc(var(--index)*2) calc(var(--index)*4.5);
+    margin: 0 auto;
+    max-width: 1300px;
+}   
+.contact__menu{
+    display:flex;
+    flex-direction: column;
+    gap: calc(var(--index)*1.4);
+    
+}
+.contact__title{
+    margin-bottom: calc(var(--index)*.7);
+    font-size: calc(var(--index)*1.2);
+
+}
+.form__title{
+    margin: 0 0 calc(var(--index)*.5) var(--index);
+    font-size: calc(var(--index)*.9);
+}
+.form__place{
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--index)*.7);
+}
+.form__inputs{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index)*.7);
+}
+.form__inputs label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(var(--index)*.7);
+    padding: calc(var(--index)*.2);
+}
+.form__inputs input{
+    height: fit-content;
+    font-size: calc(var(--index)*.7);
+    padding: calc(var(--index)*.2);
+}
+.form__inputs input::placeholder{
+    font-size: calc(var(--index)*.7);
+    padding: calc(var(--index)*.2);
+}
+.desc{
+    flex: 1 1 70%;
+    font-size: calc(var(--index)*.7);
+    padding: calc(var(--index)*.5);
+}
+.form button{
+    margin-top: calc(var(--index)*.7);
+}
+.hr{
+    display: flex;
+    align-items: center;
+}
+.hr::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+    margin-right: 10px;
+}
+.hr::after{
+    margin-left: 10px;
+    content: '';
+    width:100vw;
+    height: 1px;
+    background-color: #000;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
